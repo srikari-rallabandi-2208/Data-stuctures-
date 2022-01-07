@@ -1,6 +1,7 @@
 #Question :
 
-#define a function which will take a list and a number as input and return a pair from the list which will add up to the number
+#define a function which will take a list and a number as input and 
+# return a pair from the list which will add up to the number
 
 def find_sum(lst, k):
     for num in lst :
