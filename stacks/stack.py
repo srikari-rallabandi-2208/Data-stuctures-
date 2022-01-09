@@ -34,6 +34,9 @@ class Stack:
     def isEmpty(self):
         return self.size == 0
     
+    def size(self):
+        return self.size
+    
     def peek(self):
         if not self.isEmpty():
             return self.top.data
