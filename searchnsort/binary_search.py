@@ -1,4 +1,6 @@
+import snoop
 
+@snoop
 def binarySearch(lst, low, high, item):
     
     if high >= low:
