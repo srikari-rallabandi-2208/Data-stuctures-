@@ -1,6 +1,7 @@
 import snoop
+import time
 
-@snoop
+#@snoop
 def binarySearch(lst, item):
     
     low = 0
@@ -21,9 +22,13 @@ def binarySearch(lst, item):
 
 if __name__ == "__main__":
     
-    samp = [1,2,3,4,5,6,7,8,9,10]
+    samp = [x for x in range(10000)]
     
-    result = binarySearch(samp,100)
+    start_time = time.perf_counter()
+    result = binarySearch(samp,1)
+    end_time = time.perf_counter()
+    
+    print(f"Total time took for binary search: {start_time - end_time:0.7f} seconds ")
     
     if result == -1:
         print("search failed")

@@ -6,8 +6,9 @@ sample we are searching is large
 '''
 
 import snoop
+import time
 
-@snoop
+#@snoop
 def ternary_search(low,high,lst,item):
     
     while high >= low:
@@ -39,8 +40,14 @@ def ternary_search(low,high,lst,item):
 
 if __name__ == "__main__":
     
-    items = [x for x in range(10000)]
-    result = ternary_search(0,9999,items, 300)
+    
+    items = [x for x in range(100000)]
+    
+    start_time = time.perf_counter()
+    result = ternary_search(0,99999,items, 300)
+    end_time = time.perf_counter()
+    
+    print(f"Total time took for ternary search: {start_time - end_time:0.7f} seconds ")
     
     if result == -1:
         print("Item Not found .. :( ")
