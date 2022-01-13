@@ -51,7 +51,7 @@ class QSTest(unittest.TestCase):
         initial_array = array
         random.shuffle(array)
         input_array = array
-        quick_sort(0,len(array)-1, array)
+        quick_sort(0,len(array)-1, input_array)
         final_array = array 
         self.assertEqual(initial_array,final_array,"Array didn't sort !")
 
