@@ -47,13 +47,13 @@ def quick_sort(start, end, lst):
 class QSTest(unittest.TestCase):
     
     def test_quick_sort(self):
-        array =     [x for x in range(10)]
+        array =     [x for x in range(100)]
         initial_array = array
         random.shuffle(array)
-        input_array = array
-        quick_sort(0,len(array)-1, input_array)
-        final_array = array 
-        self.assertEqual(initial_array,final_array,"Array didn't sort !")
+        print(array)
+        quick_sort(0,len(array)-1, array)
+        print(f"Sorted Array {array}")
+        self.assertEqual(initial_array,array,"Array didn't sort !")
 
 if __name__ == "__main__":
     
