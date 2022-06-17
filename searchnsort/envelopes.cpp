@@ -1,6 +1,6 @@
 //LeetCode - problem 354
 
-int maxEnvelopes(vector<pair<int, int>>& envelopes) {
+int maxEnvelopes(vector<pair<int, int& envelopes) {
         if (envelopes.empty()) return 0;
         sort(envelopes.begin(), envelopes.end());
         vector<int> dp(envelopes.size(), 1);
