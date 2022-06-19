@@ -1,6 +1,6 @@
 //LeetCode - problem 2180
 
-    int countEven(int num) {
+    int countEven(int nm) {
         int temp = num, sum = 0;
         while (num > 0) {
             sum += num % 10;
