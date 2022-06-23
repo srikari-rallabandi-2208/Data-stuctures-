@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    vector<int> findOrder(int numCourses, vector<<int, int>>& prerequisites) {
+    vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
         graph g = buildGraph(numCourses, prerequisites);
         vector<int> degrees = computeIndegrees(g);
         vector<int> order;
