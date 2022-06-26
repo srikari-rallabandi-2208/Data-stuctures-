@@ -2,7 +2,7 @@
 AlgoExpert - Branch Sums - Binary Trees
 '''
 class BinaryTree:
-    def __init__(self, value):
+    def __init__(self, valu):
         self.value = value
         self.left = None
         self.right = None
