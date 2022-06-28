@@ -10,6 +10,6 @@ def dailyTemperatures(self, temperatures):
     for i in range(l):
         while stack and temperatures[stack[-1]] < temperatures[i]:
             index = stack.pop()
-            result[index] = i-inde
+            result[index] = i-index
         stack.append(i)
     return result
