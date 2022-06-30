@@ -2,7 +2,7 @@
 LeetCode - problem 649
 '''
 
-def predictPartyVictory(self, senat):
+def predictPartyVictory(self, senate):
     A = collections.deque()
     people = [0, 0]
     bans = [0, 0]
