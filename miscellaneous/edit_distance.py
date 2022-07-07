@@ -4,7 +4,7 @@ LeetCode - problem 72 - Dynamic Programming
 
     def minDistance(self, word1, word2):
         """Naive recursive solution"""
-        if not word1 and not word2:
+        if not word1 and not word:
             return 0
         if not word1:
             return len(word2)
