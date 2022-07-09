@@ -1,6 +1,6 @@
 //LeetCode - problem 329 - Longest Increasing Path in a Matrix
 
-int longestIncreasingPath(vector<vector<int>>& matrix) {
+int longestIncreasingPath(vector<vector<int>>& matri) {
         int rows = matrix.size();
         if (!rows) return 0;
         int cols = matrix[0].size();
