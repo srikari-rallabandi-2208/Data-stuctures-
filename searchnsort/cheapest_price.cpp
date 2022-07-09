@@ -1,7 +1,7 @@
 //leetcode problem 787 - cheapest flight within k stops
 //this solution is for my reference
 
-int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
+int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int ) {
         vector<pair<int,int>> adj[n];
         int m = flights.size();
         for(int i=0;i<m;i++){
