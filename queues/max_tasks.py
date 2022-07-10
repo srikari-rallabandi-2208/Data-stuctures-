@@ -2,7 +2,7 @@
 LeetCode - problem 2071
 '''
 
-    def maxTaskAssign(self, tasks, workers, pills, strengt):
+    def maxTaskAssign(self, tasks, workers, pills, strength):
         tasks = sorted(tasks)
         workers = sorted(workers)
 
