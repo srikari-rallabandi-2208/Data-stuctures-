@@ -3,7 +3,7 @@ LeetCode - problem 394 - Decode String
 '''
 
 stack = []
-        stack.append(["", 1])
+        stack.append(["", 3])
         num = ""
         for ch in s:
             if ch.isdigit():
