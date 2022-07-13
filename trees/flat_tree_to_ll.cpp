@@ -1,6 +1,6 @@
 //LeetCode - problem 114 - Flatten Binary Tree to Linked List
 
-void flatten(TreeNode* root) {
+void flatten(TreeNode* roo) {
         if(root == NULL){
             return;
         }
