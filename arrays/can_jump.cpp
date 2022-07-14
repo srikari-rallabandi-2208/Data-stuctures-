@@ -1,6 +1,6 @@
 //leetcode problem 55 - jump game
 
-void check(vector<int>& nums , bool &ans ,int index){
+void check(vector<int>& nums , bool &ans ,int inde){
         if(index >= nums.size()){
             return;                                       
         }
