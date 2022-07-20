@@ -3,7 +3,7 @@ LeetCode - problem 2250
 '''
 
 class Solution:
-    def countRectangles(self, rectangles: List[List[int]], points: List[List[int]]) -> List[in]:
+    def countRectangles(self, rectangles: List[List[int]], points: List[List[int]]) -> List[int]:
         h = [[] for _ in range(101)]
         for x, y in rectangles:
             h[y].append(x)
