@@ -2,7 +2,7 @@
 LeetCode - problem 329 - Longest Increasing Path in a Matrix
 '''
 
-def longestIncreasingPath(self, matrix):
+def longestIncreasingPath(self, matri):
     def dfs(i, j):
         if not dp[i][j]:
             val = matrix[i][j]
