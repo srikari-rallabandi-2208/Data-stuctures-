@@ -1,6 +1,6 @@
 //LeetCode - problem 2197
 
-vector<int> replaceNonCoprimes(vector<int>& num) {
+vector<int> replaceNonCoprimes(vector<int>& nums) {
         vector<int> result;
         for(int &i:nums) {
             result.push_back(i);        
