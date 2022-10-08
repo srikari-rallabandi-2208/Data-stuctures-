@@ -1,34 +1,48 @@
 //LeetCode - problem 622
 
+struct Node {
+public:
+    int val;
+    Node* next;
+    Node(int v, Node* n=nullptr) {
+        val = v;
+        next = n;
+    }
+};
 class MyCircularQueue {
-    constructor(k) {
-        this.data = new Uint16Array(k)
-        this.maxSize = k
-        this.head = 0
-        this.tail = -1
+public:
+    MyCircularQueue(int k) {
+        maxSize = k;
     }
-    enQueue(val) {
-        if (this.isFull()) return false
-        this.tail = (this.tail + 1) % this.maxSize
-        this.data[this.tail] = val
-        return true
+    bool enQueue(int val) {
+        if (isFull()) return false;
+        Node* newNode = new Node(val);
+        if (isEmpty()) head = newNode, tail = newNode;
+        else tail->next = newNode, tail = tail->next;
+        size++;
+        return true;
     }
-    deQueue() {
-        if (this.isEmpty()) return false
-        if (this.head === this.tail) this.head = 0, this.tail = -1
-        else this.head = (this.head + 1) % this.maxSize
-        return true
+    bool deQueue() {
+        if (isEmpty()) return false;
+        Node* rem = head;
+        head = head->next;
+        delete rem;
+        size--;
+        return true;
     }
-    Front() {
-        return this.isEmpty() ? -1 : this.data[this.head]
+    int Front() {
+        return isEmpty() ? -1 : head->val;
     }
-    Rear() {
-        return this.isEmpty() ? -1 : this.data[this.tail]
+    int Rear() {
+        return isEmpty() ? -1 : tail->val;
     }
-    isEmpty() {
-        return this.tail === -1
+    bool isEmpty() {
+        return size == 0;
     }
-    isFull() {
-        return !this.isEmpty() && (this.tail + 1) % this.maxSize === this.head
-    };
+    bool isFull() {
+        return size == maxSize;
+    }
+private:
+    int maxSize, size = 0;
+    Node *head = new Node(0), *tail = new Node(0);
 };
