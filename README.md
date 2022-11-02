@@ -1,6 +1,6 @@
 # Data Stuctures And Algoritms
 
-this is my repository for different dsa problems and their solutions (own approaches + the solutions that I code-read for better understanding and then attempting on my own -- sometimes I just dumped the source code for reference).
+This is my repository for different dsa problems and their solutions (own approaches + the solutions that I code-read for better understanding and then attempting on my own -- sometimes I just dumped the source code for reference).
 
 1. Arrays
 2. Miscellaneous -- Linked List + DP + String
